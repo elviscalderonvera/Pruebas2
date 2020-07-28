@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <ui:param name="titulo" value="Informacion del Usuario "/>
+        <title><h:outputText value="#{titulo}"/></title>
+    </h:head>
+    <h:body>
+ <center>       
+ <table border="1" width="100%">
+  <tr>
+
+    <th scope="row">Materia</th>
+
+    <th>lunes</th>
+
+    <th>Martes</th>
+
+    <th>Miercoles</th>
+    
+    <th>Jueves</th>
+
+    
+    <th>Viernes</th>
+
+
+  </tr>
+
+  <tr>
+
+    <th>Programacion</th>
+
+    <td></td>
+
+    <td>07:00-09:00</td>
+
+    <td>11:00-13:00</td>
+    
+    <td></td>
+    
+    <td>09:00-11:00</td>
+
+  </tr>
+
+  <tr>
+
+    <th>Fisica</th>
+
+    <td>14:00-16:00</td>
+    <td></td>
+    <td>13:00-15:00</td>
+    <td>07:00-09:00</td>
+    <td></td>
+
+  </tr>
+
+  <tr>
+
+    <th>Matematica</th>
+
+    <td></td>
+    <td></td>
+    <td>15:00-17:00</td>
+    <td></td>
+    <td>09:00-11:00</td>
+      </tr>
+            
+     <tr> 
+    <th>Quimica</th>
+    <td>12:00-14:00</td>
+    <td></td>
+    <td>17:00-19:00</td>
+    <td></td>
+    <td></td>
+  
+
+  </tr>
+</table>
+ </center>
+        <BR></BR>
+          
+        
+        <h:form>
+            <h:messages>
+<pre>
+ <h1><h:outputText value="#{titulo}"/></h1>
+ <b><h:outputLabel value= "Ingrese Nombre:    "/></b>
+        <h:inputText value="" size="30"/>
+ <b><h:outputLabel value="Ingrese Apellido:  "/></b>
+        <h:inputText value="" size="30"/>
+ <b><h:outputLabel value="ingresa Edad:      "/></b>
+        <h:inputText value="" size="20"/>
+ <b><h:outputLabel value="Ingrese Direccion: "/></b>
+        <h:inputText value="" size="30"/>
+ <b><h:outputLabel value="Ingrese E-mail:    "/></b>
+        <h:inputText value="" size="30"/>
+ <b><h:outputLabel value="Ingrese Fecha Nac: "/></b>
+        <h:inputText value="" size="25"/>
+</pre>
+        <br></br>
+                &nbsp;&nbsp;<b><h:commandButton value="ENVIAR"/></b>
+                &nbsp;&nbsp;<B><h:commandButton value="MODIFICAR"/></B>
+                &nbsp;&nbsp;<B><h:commandButton value="ELIMINAR"/></B>
+            </h:messages>
+        </h:form>
+    </h:body>
+</html>
+
